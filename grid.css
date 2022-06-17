@@ -1,0 +1,84 @@
+*           {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main            {
+    display: grid;
+    width: 50%;
+    margin: 7% auto;
+    justify-content: center;
+    grid-template-rows: 100px 80px 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;      
+    background-color: rgb(5, 6, 66); 
+    padding: 15px;
+     
+           
+                        
+    
+}
+
+div     {
+    padding: 20px;
+
+}
+
+main .A         {
+    background-color: rgb(143, 143, 252);
+    grid-area: 1/1/span 1/span 2;
+   
+}
+
+main .B         {
+    background-color: rgba(120, 128, 204, 0.979);
+}
+
+main .C         {
+    background-color: rgb(168, 173, 219);
+    grid-area: 2/1/span 2/span 1;
+}
+
+main .D         {
+    background-color: rgb(112, 112, 170);
+    grid-area: 3/2/span 1/span 2;
+}
+
+main .E         {
+    background-color: rgb(190, 190, 248);
+    grid-area: 2/2/span 1/span 2;
+}
+
+
+@media  (max-width:376px)   {
+
+    main            {
+        display: grid;
+        width: 100%;
+        margin: 7% auto;
+        justify-content: center;
+        grid-template-rows: 100px 80px 100px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;      
+        background-color: rgb(5, 6, 66); 
+        padding: 30px;
+        }
+
+    }
+
+    @media  (max-width:700px)   {
+
+        main            {
+            display: grid;
+            width: 100%;
+            margin: 7% auto;
+            justify-content: center;
+            grid-template-rows: 100px 80px 100px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;      
+            background-color: rgb(5, 6, 66); 
+            padding: 30px;
+            }
+    
+        }
